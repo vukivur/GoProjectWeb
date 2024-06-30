@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Text</title>
+</head>
+<body>
+    <h1>Главная страница.</h1>
+
+    {{ if eq .Name "MichaelJackson"}}
+    <span>Ну, привет!</span>
+    {{ else }}
+    <span>Who are You?</span>
+    {{ end }}
+
+    <p>Пользователь: {{ .Name }}</p>
+    <p>Возраст: {{ .Age }}</p>
+    <p>Деньги: {{ .Money }}</p>
+</body>
+</html>
